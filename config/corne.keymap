@@ -22,28 +22,47 @@
                   &kp LCTRL &mo 1 &kp SPACE   &trans  &mo 2 &mo 3
                         >;
                 };
-                //--------------------------- 
+
                 lower_layer {
                         display-name = "Lower";
                         bindings = <
-   &kp GRAVE  &kp EXCL   &kp AT     &kp HASH   &kp DOLLAR  &kp LPAR       &kp RPAR   &kp KP_N7  &kp KP_N8  &kp KP_N9 &kp ASTERISK &trans 
-   &trans     &kp PRCNT  &kp CARET  &kp AMPS   &kp BSLH    &kp LBKT       &kp RBKT   &kp KP_N4  &kp KP_N5  &kp KP_N6 &kp MINUS    &kp PLUS 
-   &kp CAPS   &trans     &trans     &kp C      &kp V       &kp LBRC       &kp RBRC   &kp KP_N1  &kp KP_N2  &kp KP_N3 &kp SLASH    &kp EQUAL
+   &kp GRAVE    &kp EXCLAMATION &kp AT_SIGN &kp HASH      &kp DOLLAR    &kp LPAR       &kp RPAR   &kp KP_N7  &kp KP_N8  &kp KP_N9 &kp ASTERISK &trans 
+   &trans       &kp PERCENT     &kp CARET   &kp AMPERSAND &kp BACKSLASH &kp LBKT       &kp RBKT   &kp KP_N4  &kp KP_N5  &kp KP_N6 &kp MINUS    &kp PLUS 
+   &kp CAPSLOCK &kp Z           &kp X       &kp C         &kp V         &kp LBRC       &kp RBRC   &kp KP_N1  &kp KP_N2  &kp KP_N3 &kp SLASH    &kp EQUAL
                                     &trans     &trans      &trans         &trans     &kp KP_N0  &kp KP_DOT
                         >;
                 };
 
-
-                extra_1 {
-                        status = "reserved";
+                raise_layer {
+                        display-name = "Direction";
+                        bindings = <
+   &trans  &trans  &trans &kp K_SCROLL_UP   &trans  &trans       &trans    &kp PG_UP  &kp UP   &kp PG_DN &trans  &trans
+   &trans  &trans  &trans &kp K_SCROLL_DOWN &trans  &trans       &kp HOME  &kp LEFT   &kp DOWN &kp RIGHT &kp END &trans
+   &trans  &trans  &trans &trans            &trans  &trans       &trans    &trans     &trans   &trans    &trans  &trans 
+                          &trans            &trans  &trans       &trans    &trans     &trans
+                        >;
                 };
 
-                extra_2 {
-                        status = "reserved";
+                upper_layer {
+                        display-name = "Mouse";
+                        bindings = <
+   &trans  &trans  &trans         &mmv SCRL_UP    &trans           &trans           &trans  &trans          &mmv MOVE_UP   &trans           &trans  &trans
+   &trans  &trans  &mmv SCRL_LEFT &mmv SCRL_DOWN  &mmv SCRL_RIGHT  &trans           &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT  &trans  &trans
+   &trans  &trans  &trans         &trans          &trans           &trans           &trans  &trans          &trans         &trans           &trans  &trans
+                                  &trans          &trans           &trans           &trans  &trans          &trans
+                        >;
                 };
 
-                extra_3 {
-                        status = "reserved";
-                };
+                // extra_1 {
+                //         status = "reserved";
+                // };
+
+                // extra_2 {
+                //         status = "reserved";
+                // };
+
+                // extra_3 {
+                //         status = "reserved";
+                // };
         };
 };
