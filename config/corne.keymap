@@ -39,19 +39,19 @@
    &trans  &trans  &trans &kp K_SCROLL_UP   &trans  &trans       &trans    &kp PG_UP  &kp UP   &kp PG_DN &trans  &trans
    &trans  &trans  &trans &kp K_SCROLL_DOWN &trans  &trans       &kp HOME  &kp LEFT   &kp DOWN &kp RIGHT &kp END &trans
    &trans  &trans  &trans &trans            &trans  &trans       &trans    &trans     &trans   &trans    &trans  &trans 
-                          &trans            &mo 3   &trans       &trans    &trans     &trans
+                          &trans            &trans  &trans       &trans    &trans     &trans
                         >;
                 };
                 //---------------------------
-                upper_layer {
-                        display-name = "Mouse";
-                        bindings = <
-   &trans  &trans  &trans         &mmv SCRL_UP    &trans           &trans           &trans  &trans          &mmv MOVE_UP   &trans           &trans  &trans
-   &trans  &trans  &mmv SCRL_LEFT &mmv SCRL_DOWN  &mmv SCRL_RIGHT  &trans           &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT  &trans  &trans
-   &trans  &trans  &trans         &trans          &trans           &trans           &trans  &trans          &trans         &trans           &trans  &trans
-                                  &trans          &trans           &trans           &trans  &trans          &trans
-                        >;
-                };
+//                 upper_layer {
+//                         display-name = "Mouse";
+//                         bindings = <
+//    &trans  &trans  &trans         &mmv SCRL_UP    &trans           &trans           &trans  &trans          &mmv MOVE_UP   &trans           &trans  &trans
+//    &trans  &trans  &mmv SCRL_LEFT &mmv SCRL_DOWN  &mmv SCRL_RIGHT  &trans           &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN &mmv MOVE_RIGHT  &trans  &trans
+//    &trans  &trans  &trans         &trans          &trans           &trans           &trans  &trans          &trans         &trans           &trans  &trans
+//                                   &trans          &trans           &trans           &trans  &trans          &trans
+//                         >;
+//                 };
 
                 extra_1 {
                         status = "reserved";
